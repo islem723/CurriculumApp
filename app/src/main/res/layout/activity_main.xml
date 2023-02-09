@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/profilepicture"
+                    android:layout_width="103dp"
+                    android:layout_height="match_parent"
+
+                    app:srcCompat="@drawable/imageprofil" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/colorSecondary"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="FullName"
+                    android:inputType="textMultiLine" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/colorSecondary"
+                    android:ems="10"
+                    android:hint="email"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/colorSecondary"
+                    android:ems="10"
+                    android:hint="Age"
+                    android:inputType="number" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:background="@android:color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="1dp"
+                        android:orientation="vertical"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                        tools:layout_editor_absoluteX="1dp">
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="13dp" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="27dp"
+                            android:background="#FFFFFF"
+                            android:backgroundTint="#FFFFFF"
+                            android:breakStrategy="high_quality"
+                            android:fontFamily="sans-serif"
+                            android:text="  Gender"
+                            android:textColor="#838383"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="391dp"
+                            android:layout_height="52dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <Space
+                                android:layout_width="103dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.1" />
+
+                            <RadioButton
+                                android:id="@+id/radioButtonHomme"
+                                android:layout_width="74dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="#000000"
+                                android:backgroundTintMode="add"
+                                android:checked="true"
+                                android:drawableTint="@color/black"
+                                android:fontFamily="sans-serif"
+                                android:foregroundTintMode="add"
+                                android:phoneNumber="false"
+                                android:text="Homme"
+                                android:textIsSelectable="true"
+                                android:textSize="16sp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                            <RadioButton
+                                android:id="@+id/radioButtonFemme"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="#121212"
+                                android:backgroundTintMode="add"
+                                android:drawableTint="#000000"
+                                android:drawableTintMode="add"
+                                android:fontFamily="sans-serif"
+                                android:text="Femme"
+                                android:textSize="16sp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                            <Space
+                                android:layout_width="73dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="01" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/divider9"
+                            android:layout_width="385dp"
+                            android:layout_height="2dp"
+                            android:layout_gravity="center"
+                            android:background="?android:attr/listDivider"
+                            android:backgroundTint="#131313"
+                            android:backgroundTintMode="add" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/skills"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Skills" />
+
+                            <SeekBar
+                                android:id="@+id/seekBar"
+                                android:layout_width="863dp"
+                                android:layout_height="32dp" />
+
+                            <TextView
+                                android:id="@+id/android"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="ANDROID" />
+
+                            <SeekBar
+                                android:id="@+id/seekBar3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/iOS"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="iOS" />
+
+                            <SeekBar
+                                android:id="@+id/seekBar2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/Flutter"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Flutter" />
+
+                            <View
+                                android:id="@+id/view"
+                                android:layout_width="match_parent"
+                                android:layout_height="3dp"
+                                android:background="@android:color/black" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="112dp"
+                                    android:orientation="horizontal"
+                                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                                    tools:layout_editor_absoluteX="4dp">
+
+                                    <Space
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" />
+
+                                    <Button
+                                        android:id="@+id/buttonReset"
+                                        android:layout_width="140dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@color/colorPrimaryVariant"
+                                        android:backgroundTint="@color/black"
+                                        android:text="Reset"
+                                        android:textColorLink="#0B0606"
+                                        app:rippleColor="@color/colorPrimaryVariant" />
+
+                                    <Space
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" />
+
+                                    <Button
+                                        android:id="@+id/buttonNext"
+                                        android:layout_width="140dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="NEXT" />
+
+                                    <Space
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
